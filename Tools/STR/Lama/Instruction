@@ -1,0 +1,15 @@
+cd lama
+conda env create -f conda_env.yml
+conda activate lama
+conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch -y
+pip install pytorch-lightning==1.2.9
+
+curl -LJO https://huggingface.co/smartywu/big-lama/resolve/main/big-lama.zip
+unzip big-lama.zip
+
+
+export TORCH_HOME=$(pwd) && export PYTHONPATH=$(pwd)
+
+export PYTHONPATH=/home/pmd/Desktop/Alex/Tools/STR/Lama/big-lama/src:$PYTHONPATH
+
+python bin/predict.py --checkpoint best.ckpt --model_path=/home/pmd/Desktop/Alex/Tools/STR/Lama/big-lama/ --input_dir=/home/pmd/Desktop/Alex/Tools/STR/Lama/LaMa_test_images/1 --mask_dir /home/pmd/Desktop/Alex/Tools/STR/Lama/LaMa_test_images/1/mask --output_dir=./output

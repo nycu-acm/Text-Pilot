@@ -1,0 +1,46 @@
+env改成
+name: DiffTSR
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8.5
+  - pip=20.3
+  - cudatoolkit=11.3
+  - pytorch=1.10.2
+  - torchvision=0.11.3
+  - numpy=1.19.2
+  - pip:
+    - albumentations==0.4.3
+    - opencv-python==4.1.2.30
+    - pudb==2019.2
+    - imageio==2.9.0
+    - imageio-ffmpeg==0.4.2
+    - pytorch-lightning==1.4.2
+    - omegaconf==2.1.1
+    - test-tube>=0.7.5
+    - streamlit>=0.73.1 
+    - einops==0.3.0
+    - torch-fidelity==0.3.0
+    - transformers==4.2.2
+    - tokenizers==0.10.1
+    - taming-transformers
+    - packaging==22.0
+    - 'torchmetrics<0.8'
+    - taming-transformers-rom1504 
+    - axial_positional_embedding
+    - linear_attention_transformer
+    - zhconv
+    - -e .
+    
+    
+
+
+
+inference檔案前面加
+import distutils.version    # 先載入它...
+import distutils            # …以後 distutils.version 就是它了
+
+
+
+

@@ -1,0 +1,25 @@
+
+
+
+
+conda activate units
+
+
+PYTHONPATH=$PWD python script/Units_inference.py --conf configs/finetune.py --ckpt weights/shared.pt
+
+
+python paste.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
