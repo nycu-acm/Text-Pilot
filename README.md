@@ -1,6 +1,5 @@
-<img width="1234" height="518" alt="image" src="https://github.com/user-attachments/assets/2efa5ee3-a673-4b5c-a573-b7b83bfffdb5" /># Text-Pilot
-Text-Pilot: Intelligent Visual Text Planning and Manipulation via Multi-modal LLM as Agent
 
+Text-Pilot: Intelligent Visual Text Planning and Manipulation via Multi-modal LLM as Agent
 
 📘 Overview
 Text-Pilot is a training-free, MLLM-based agent framework that automatically detects and corrects text errors in generated images.
@@ -15,7 +14,8 @@ Unified framework for editing, erasing, and rendering text
 Plug-and-play with existing diffusion models, no training required
 Significant improvement on OCR and text-fidelity metrics
 → Empower your diffusion model to “read and write” correctly.
-![Uploading image.png…]()
+<img width="2862" height="1592" alt="image" src="https://github.com/user-attachments/assets/d9b81874-54c6-494d-b946-28dcbb49b249" />
+
 
 
 🔧 Environment Setup
