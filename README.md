@@ -21,8 +21,8 @@ Significant improvement on OCR and text-fidelity metrics
 
 1. Manual setup all the tools that Text-pilot is using:
 
-a. OCR: Download code from https://github.com/clovaai/units to path /Tools/OCR/Units_Detector/units/
-
-b. SD3: Download code from https://huggingface.co/stabilityai/stable-diffusion-3.5-larges to path /Tools/SD3/stable-diffusion-3.5-large  
-
-c. FLUX: Download code from https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev to path /Tools/STE/FLUX 
+    a. OCR: Download code from https://github.com/clovaai/units to path /Tools/OCR/Units_Detector/units/
+    
+    b. SD3: Download code from https://huggingface.co/stabilityai/stable-diffusion-3.5-larges to path /Tools/SD3/stable-diffusion-3.5-large  
+    
+    c. FLUX: Download code from https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev to path /Tools/STE/FLUX 
