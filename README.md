@@ -19,10 +19,41 @@ Significant improvement on OCR and text-fidelity metrics
 
 🔧 Environment Setup
 
-1. Manual setup all the tools that Text-pilot is using:
+1. Manual setup all the tools that Text-pilot have use, and there have instructions in each folder, please reference it:
 
-    a. OCR: Download code from https://github.com/clovaai/units to path /Tools/OCR/Units_Detector/units/
-    
-    b. SD3: Download code from https://huggingface.co/stabilityai/stable-diffusion-3.5-larges to path /Tools/SD3/stable-diffusion-3.5-large  
-    
-    c. FLUX: Download code from https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev to path /Tools/STE/FLUX 
+    a. OCR: Download code from https://github.com/clovaai/units into path /Tools/OCR/Units_Detector/units/
+    b. SD3: Download code from https://huggingface.co/stabilityai/stable-diffusion-3.5-larges into path /Tools/SD3/stable-diffusion-3.5-large  
+    c. FLUX: Download code from https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev into path /Tools/STE/FLUX
+    d. Textctrl: Download code from https://github.com/weichaozeng/TextCtrl into path /Tools/STE/TextCtrl 
+    e. Lama: Download code from https://github.com/advimman/lama into path /Tools/STR/Lama 
+    f. DiffTSR: Download code from https://github.com/YuzheZhang-1999/DiffTSR into path /Tools/Super-resolution/DiffTSR
+
+2. Prepared GPT-4o and GPT-Image-1 API key and end-point filled in (Agent_gpt.py, eval_image1.py, eval.py, scripts/OpenAI_layout.py and scripts/OpenAI.py)
+
+3. Prepared the datasets Mario-eval from https://github.com/microsoft/unilm/tree/master/textdiffuser into path /Datasets
+    a. create folder iter_exp into path /Datasets/MARIOEval/MARIOEval/LAIONEval4000
+
+5. Run eval.py, the pipeline uses Stable Diffusion 3.5 as its T2I model.
+
+6. Run eval_image1.py, the pipeline uses GPT-image-1 as its T2I model.
+
+🔧 Eval
+
+1. Prepare
+    a. python ./File_generate.py
+    b. move all the image out of folder and copy the original and final image to /Datasets/Generate
+        >> Use the microsoft image ai to ocr the image, and save in Datasets/Eval/OCR_results
+
+2. OCR:
+    a. python ./OCR_score.py
+        >> Start evalution
+
+3. FID:
+    a. python FID_score.py ../Datasets/MARIOEval/MARIOEval/LAIONEval4000/images ../Datasets/Generate/Edit_FID
+
+
+4. Clip_score:
+    a. python Clip_scroe.py
+    b. python Clip_file_make.py
+        python Clip_score.py image2prompt.json ./Datasets/Generate/SD3_FID
+        python Clip_score.py image2prompt_edit.json ./Datasets/Generate/Edit_FID
