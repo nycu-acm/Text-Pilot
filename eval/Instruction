@@ -1,0 +1,29 @@
+0. Prepare
+python File_generate.py
+>> move all the image out of folder and copy the original and final image to /media/alexkuo3090/KC3000/MYWORK/Datasets/Generate
+>> Use the microsoft image ai to ocr the image, and save in /media/alexkuo3090/KC3000/MYWORK/Datasets/Eval/OCR_results
+
+
+scripts
+python parser_eval_folder.py
+>> move all the image out of folder and copy the original and final image to /media/alexkuo3090/KC3000/MYWORK/Datasets/Generate
+
+
+
+1. OCR:
+python ./OCR_score.py
+>> Start evalution
+
+
+2. FID:
+python FID_score.py /home/pmd/Desktop/Alex/Datasets/MARIOEval/MARIOEval/LAIONEval4000/images /home/pmd/Desktop/Alex/Datasets/Generate/Edit_FID
+
+
+2. Clip_score:
+python Clip_scroe.py
+
+python Clip_file_make.py
+python Clip_score.py image2prompt.json /home/pmd/Desktop/Alex/Datasets/Generate/SD3_FID
+python Clip_score.py image2prompt_edit.json /home/pmd/Desktop/Alex/Datasets/Generate/Edit_FID
+
+
