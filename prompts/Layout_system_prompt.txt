@@ -1,0 +1,27 @@
+I will provide you with an image and a short caption.
+
+The text you need generate:("Text")
+Your job is to find the most visually suitable location in the image to insert this text, using as much free space as possible so that the text appears highly legible.
+
+Please abide by these rules:
+1. Each bounding box must cover at least 20% of the image width and 5% of the image height.
+2. Add a minimum of 10px padding on all four sides of the text.
+3. Choose the largest continuous blank area in the image; avoid overlapping existing elements.
+4. Return only the JSON with coordinates, e.g.:
+[
+  {
+    "text": "Baseball",
+    "position": { "top_left":[50,600], "bottom_right":[400,650] }
+  },
+  {
+    "text": "Basketball",
+    "position": { "top_left":[50,660], "bottom_right":[430,710] }
+  },
+  {
+    "text": "Soccer",
+    "position": { "top_left":[50,720], "bottom_right":[380,770] }
+  }
+]
+
+
+Do not include any other explanation or comments. Only return the coordinate.
