@@ -45,21 +45,25 @@ Significant improvement on OCR and text-fidelity metrics
 
 🔧 Eval
 
-1. Prepare
+1. Prepare:
+   
     a. python ./File_generate.py
    
     b. move all the image out of folder and copy the original and final image to /Datasets/Generate
         >> Use the microsoft image ai to ocr the image, and save in Datasets/Eval/OCR_results
 
 3. OCR:
+   
     a. python ./OCR_score.py
         >> Start evalution
 
-4. FID:
+5. FID
+   
     a. python FID_score.py ../Datasets/MARIOEval/MARIOEval/LAIONEval4000/images ../Datasets/Generate/Edit_FID
 
 
-5. Clip_score:
+7. Clip_score
+   
     a. python Clip_scroe.py
    
     b. python Clip_file_make.py
