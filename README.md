@@ -25,7 +25,9 @@ Significant improvement on OCR and text-fidelity metrics
 
     a. OCR:
            i. We did some revised on this file -> /Tools/OCR/Units_Detector/units/scripts/Units_inference.py, make sure to use this to cover the original
+   /
            ii. Download code from https://github.com/clovaai/units into path /Tools/OCR/Units_Detector/units/
+   /
            iii. conda create --name units python=3.10
    
     b. SD3:
