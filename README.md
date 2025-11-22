@@ -19,24 +19,42 @@ Significant improvement on OCR and text-fidelity metrics
 
 
 ## 🔧 Environment Setup
+0. git clone Text-Pilot
 
-1. Manual setup all the tools that Text-pilot have use, and there have instructions in each folder, please reference it:
+1. Manual setup all the tools that Text-pilot have use, and there have instructions in each tool folder, please reference it:
 
-    a. OCR: Download code from https://github.com/clovaai/units into path /Tools/OCR/Units_Detector/units/
+    a. OCR:
+           i. We did some revised on this file -> /Tools/OCR/Units_Detector/units/scripts/Units_inference.py, make sure to use this to cover the original
+           ii. Download code from https://github.com/clovaai/units into path /Tools/OCR/Units_Detector/units/
+           iii. conda create --name units python=3.10
    
-    b. SD3: Download code from https://huggingface.co/stabilityai/stable-diffusion-3.5-larges into path /Tools/SD3/stable-diffusion-3.5-large
+    b. SD3:
+           i. Download code from https://huggingface.co/stabilityai/stable-diffusion-3.5-larges into path /Tools/SD3/stable-diffusion-3.5-large
+           ii. conda create --name sd3 python=3.11
     
-    c. FLUX: Download code from https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev into path /Tools/STE/FLUX
+    c. FLUX:
+           i. Download code from https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev into path /Tools/STE/FLUX
+           ii. conda create --name Flux python=3.10
    
-    d. Textctrl: Download code from https://github.com/weichaozeng/TextCtrl into path /Tools/STE/TextCtrl
+    d. Textctrl:
+           i. Download code from https://github.com/weichaozeng/TextCtrl into path /Tools/STE/TextCtrl
+           ii. conda create --name textctrl python=3.11
    
-    e. Lama: Download code from https://github.com/advimman/lama into path /Tools/STR/Lama
+    e. Lama:
+           i. We did some revised on this file -> /Tools/STR/Lama/bin/predict.py, make sure to use this to cover the original predict.py
+           ii. Download code from https://github.com/advimman/lama into path /Tools/STR/Lama
+           iii. conda create --name lama python=3.6
    
-    f. DiffTSR: Download code from https://github.com/YuzheZhang-1999/DiffTSR into path /Tools/Super-resolution/DiffTSR
+    f. DiffTSR:
+           i. Download code from https://github.com/YuzheZhang-1999/DiffTSR into path /Tools/Super-resolution/DiffTSR
+           ii. conda create --name DiffTSR python=3.8
 
-3. Prepared GPT-4o and GPT-Image-1 API key and end-point filled in (Agent_gpt.py, eval_image1.py, eval.py, scripts/OpenAI_layout.py and scripts/OpenAI.py)
+3. Prepared GPT-4o and GPT-Image-1 API key and end-point filled in:
+   
+   a. GPT-4o -> eval.py, scripts/OpenAI_layout.py and scripts/OpenAI.py
+   b. GPT-Image-1 -> eval_image1.py
 
-4. Prepared the datasets Mario-eval from https://github.com/microsoft/unilm/tree/master/textdiffuser into path /Datasets
+5. Prepared the datasets Mario-eval from https://github.com/microsoft/unilm/tree/master/textdiffuser into path /Datasets
    
     a. create folder iter_exp into path /Datasets/MARIOEval/MARIOEval/LAIONEval4000
 
