@@ -1,7 +1,7 @@
 
-#Text-Pilot: Intelligent Visual Text Planning and Manipulation via Multi-modal LLM as Agent
+# Text-Pilot: Intelligent Visual Text Planning and Manipulation via Multi-modal LLM as Agent
 
-##📘 Overview
+## 📘 Overview
 Text-Pilot is a training-free, MLLM-based agent framework that automatically detects and corrects text errors in generated images.
 It leverages the reasoning and perception abilities of multi-modal large language models (MLLMs) to evaluate visual text accuracy and autonomously decide which operation—edit, erase, or regenerate—should be applied.
 
@@ -18,7 +18,7 @@ Significant improvement on OCR and text-fidelity metrics
 
 
 
-##🔧 Environment Setup
+## 🔧 Environment Setup
 
 1. Manual setup all the tools that Text-pilot have use, and there have instructions in each folder, please reference it:
 
@@ -44,7 +44,7 @@ Significant improvement on OCR and text-fidelity metrics
 
 7. Run eval_image1.py, the pipeline uses GPT-image-1 as its T2I model.
 
-##🔧 Eval
+## 🔧 Eval
 
 1. Prepare:
    
