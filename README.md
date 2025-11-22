@@ -1,7 +1,7 @@
 
-Text-Pilot: Intelligent Visual Text Planning and Manipulation via Multi-modal LLM as Agent
+#Text-Pilot: Intelligent Visual Text Planning and Manipulation via Multi-modal LLM as Agent
 
-📘 Overview
+##📘 Overview
 Text-Pilot is a training-free, MLLM-based agent framework that automatically detects and corrects text errors in generated images.
 It leverages the reasoning and perception abilities of multi-modal large language models (MLLMs) to evaluate visual text accuracy and autonomously decide which operation—edit, erase, or regenerate—should be applied.
 
@@ -18,7 +18,7 @@ Significant improvement on OCR and text-fidelity metrics
 
 
 
-🔧 Environment Setup
+##🔧 Environment Setup
 
 1. Manual setup all the tools that Text-pilot have use, and there have instructions in each folder, please reference it:
 
@@ -44,7 +44,7 @@ Significant improvement on OCR and text-fidelity metrics
 
 7. Run eval_image1.py, the pipeline uses GPT-image-1 as its T2I model.
 
-🔧 Eval
+##🔧 Eval
 
 1. Prepare:
    
@@ -53,20 +53,21 @@ Significant improvement on OCR and text-fidelity metrics
     b. move all the image out of folder and copy the original and final image to /Datasets/Generate
         >> Use the microsoft image ai to ocr the image, and save in Datasets/Eval/OCR_results
 
-3. OCR:
+2. OCR:
    
     a. python ./OCR_score.py
         >> Start evalution
-
-5. FID
+   
+3. FID
    
     a. python FID_score.py ../Datasets/MARIOEval/MARIOEval/LAIONEval4000/images ../Datasets/Generate/Edit_FID
 
-
-7. Clip_score
+4. Clip_score
    
     a. python Clip_scroe.py
    
     b. python Clip_file_make.py
         python Clip_score.py image2prompt.json ./Datasets/Generate/SD3_FID
         python Clip_score.py image2prompt_edit.json ./Datasets/Generate/Edit_FID
+
+5. GPT-4o (prepare API Key) and LLava-LLama-3 (download from https://huggingface.co/xtuner/llava-llama-3-8b)
