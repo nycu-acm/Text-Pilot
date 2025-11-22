@@ -23,24 +23,24 @@ Significant improvement on OCR and text-fidelity metrics
 
 1. Manual setup all the tools that Text-pilot have use, and there have instructions in each tool folder, please reference it:
 
-    a. OCR:
+    a. OCR:<br>
            i. We did some revised on this file -> /Tools/OCR/Units_Detector/units/scripts/Units_inference.py, make sure to use this to cover the original<br>
            ii. Download code from https://github.com/clovaai/units into path /Tools/OCR/Units_Detector/units/<br>
            iii. conda create --name units python=3.10
    
-    b. SD3:
+    b. SD3:<br>
            i. Download code from https://huggingface.co/stabilityai/stable-diffusion-3.5-larges into path /Tools/SD3/stable-diffusion-3.5-large<br>
            ii. conda create --name sd3 python=3.11
     
-    c. FLUX:
+    c. FLUX:<br>
            i. Download code from https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev into path /Tools/STE/FLUX<br>
            ii. conda create --name Flux python=3.10
    
-    d. Textctrl:
+    d. Textctrl:<br>
            i. Download code from https://github.com/weichaozeng/TextCtrl into path /Tools/STE/TextCtrl<br>
            ii. conda create --name textctrl python=3.11
    
-    e. Lama:
+    e. Lama:<br>
            i. We did some revised on this file -> /Tools/STR/Lama/bin/predict.py, make sure to use this to cover the original predict.py<br>
            ii. Download code from https://github.com/advimman/lama into path /Tools/STR/Lama<br>
            iii. conda create --name lama python=3.6
