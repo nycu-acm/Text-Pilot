@@ -159,7 +159,7 @@ def main():
                         'bash', '-lc',
                         f"python /home/pmd/Desktop/Alex/scripts/OpenAI.py "
                         f"--input_txt_path /home/pmd/Desktop/Alex/prompts/{image_name}/MLLM_input_prompt.txt "
-                        # f"--img_path /home/pmd/Desktop/Alex/images/Final_Output/{image_name}/SD/*.png "
+                        f"--img_path /home/pmd/Desktop/Alex/images/Final_Output/{image_name}/SD/*.png "
                         f"--output_txt_path /home/pmd/Desktop/Alex/prompts/{image_name}/MLLM_output_instruction.txt"
                     ], check=True)
             
