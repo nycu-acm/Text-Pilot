@@ -50,7 +50,7 @@ Significant improvement on OCR and text-fidelity metrics
            ii. conda create --name DiffTSR python=3.8
    
     e. Base Python:
-           i. The base python version need to be > python 3.11
+           i. The base python version need to be > python 3.11<br>
            ii. This is use for execute inference script, so don't need to create any new enviroments name
 
 3. Prepared GPT-4o and GPT-Image-1 API key and end-point filled in:
