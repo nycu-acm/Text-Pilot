@@ -24,34 +24,41 @@ Significant improvement on OCR and text-fidelity metrics
 1. Manual setup all the tools that Text-pilot have use, and there have instructions in each tool folder, please reference it:
 
     a. OCR:<br>
-           i. We did some revised on this file -> /Tools/OCR/Units_Detector/units/scripts/Units_inference.py, make sure to use this to cover the original<br>
+           i. We did some revised on this file -> /Tools/OCR/Units_Detector/units/scripts/Units_inference.py, make sure this file is copy<br>
            ii. Download code from https://github.com/clovaai/units into path /Tools/OCR/Units_Detector/units/<br>
-           iii. conda create --name units python=3.10
+           iii. Make sure step 1 Units_inference.py replace original Units_inference.py<br>
+           iv. conda create --name units python=3.10<br>
+           v. Cotinue remain steps from https://github.com/clovaai/units into path /Tools/OCR/Units_Detector/units
    
     b. SD3:<br>
            i. Download code from https://huggingface.co/stabilityai/stable-diffusion-3.5-larges into path /Tools/SD3/stable-diffusion-3.5-large<br>
            ii. conda create --name sd3 python=3.11
+           iii. Cotinue remain steps from https://huggingface.co/stabilityai/stable-diffusion-3.5-larges
     
     c. FLUX:<br>
            i. Download code from https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev into path /Tools/STE/FLUX<br>
            ii. conda create --name Flux python=3.10
+           iii. Cotinue remain steps from https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev
    
     d. Textctrl:<br>
            i. Download code from https://github.com/weichaozeng/TextCtrl into path /Tools/STE/TextCtrl<br>
            ii. conda create --name textctrl python=3.11
+           iii. Cotinue remain steps from https://github.com/weichaozeng/TextCtrl
    
     e. Lama:<br>
-           i. We did some revised on this file -> /Tools/STR/Lama/bin/predict.py, make sure to use this to cover the original predict.py<br>
+           i. We did some revised on this file -> /Tools/STR/Lama/bin/predict.py, make sure this file is copy<br>
            ii. Download code from https://github.com/advimman/lama into path /Tools/STR/Lama<br>
-           iii. conda create --name lama python=3.6
+           iii. Make sure step 1 predict.py replace original predict.py<br>
+           iv. conda create --name lama python=3.6<br>
+           v. Cotinue remain steps from https://github.com/advimman/lama
    
     f. DiffTSR:<br>
            i. Download code from https://github.com/YuzheZhang-1999/DiffTSR into path /Tools/Super-resolution/DiffTSR<br>
-           ii. conda create --name DiffTSR python=3.8
+           ii. conda create --name DiffTSR python=3.8<br>
+           iii. Cotinue remain steps from https://github.com/YuzheZhang-1999/DiffTSR
    
     e. Base Python:<br>
-           i. The base python version need to be > python 3.11<br>
-           ii. This is use for execute inference script, so don't need to create any new enviroments name
+           i. conda create --name base311 python=3.11<br>
 
 3. Prepared GPT-4o and GPT-Image-1 API key and end-point filled in:
    
