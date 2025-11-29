@@ -89,7 +89,7 @@ def main():
                     "source ~/anaconda3/etc/profile.d/conda.sh && "
                     "conda activate sd3 && "
                     f"python {shlex.quote(str(sd3_script))} "
-                    "--prompt $(< /home/pmd/Desktop/Alex/prompts/SD3_prompt.txt)"
+                    "--prompt \"$(< /home/pmd/Desktop/Alex/prompts/SD3_prompt.txt)\""
                 )
             ], check=True)
 
@@ -609,7 +609,7 @@ def main():
         print(f"✅ 已將 Final_Output、SD3_prompt.txt 與 prompts 資料夾 複製到 {dst}")
 
         # 最後執行 cleanup.py
-        #subprocess.run(['python', 'cleanup.py'], check=True)
+        subprocess.run(['python', 'cleanup.py'], check=True)
     
 
 if __name__ == "__main__":
