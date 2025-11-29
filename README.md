@@ -69,11 +69,16 @@ Significant improvement on OCR and text-fidelity metrics
    
     a. create folder iter_exp into path /Datasets/MARIOEval/MARIOEval/LAIONEval4000
 
-6. ```conda activate base311
+6. ```bash
+   conda activate base311
 
-7. ```python eval.py, the pipeline uses Stable Diffusion 3.5 as its T2I model.
+7. ```
+   python eval.py
+the pipeline uses Stable Diffusion 3.5 as its T2I model.
 
-8. ```python eval_image1.py, the pipeline uses GPT-image-1 as its T2I model.
+8. ```
+   python eval_image1.py
+the pipeline uses GPT-image-1 as its T2I model.
 
 ## 🔧 Eval
 
