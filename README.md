@@ -48,6 +48,10 @@ Significant improvement on OCR and text-fidelity metrics
     f. DiffTSR:
            i. Download code from https://github.com/YuzheZhang-1999/DiffTSR into path /Tools/Super-resolution/DiffTSR<br>
            ii. conda create --name DiffTSR python=3.8
+   
+    e. Base Python:
+           i. The base python version need to be > python 3.11
+           ii. This is use for execute inference script, so don't need to create any new enviroments name
 
 3. Prepared GPT-4o and GPT-Image-1 API key and end-point filled in:
    
