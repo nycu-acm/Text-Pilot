@@ -32,17 +32,17 @@ Significant improvement on OCR and text-fidelity metrics
    
     b. SD3:<br>
            i. Download code from https://huggingface.co/stabilityai/stable-diffusion-3.5-larges into path /Tools/SD3/stable-diffusion-3.5-large<br>
-           ii. conda create --name sd3 python=3.11
+           ii. conda create --name sd3 python=3.11<br>
            iii. Cotinue remain steps from https://huggingface.co/stabilityai/stable-diffusion-3.5-larges
     
     c. FLUX:<br>
            i. Download code from https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev into path /Tools/STE/FLUX<br>
-           ii. conda create --name Flux python=3.10
+           ii. conda create --name Flux python=3.10<br>
            iii. Cotinue remain steps from https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev
    
     d. Textctrl:<br>
            i. Download code from https://github.com/weichaozeng/TextCtrl into path /Tools/STE/TextCtrl<br>
-           ii. conda create --name textctrl python=3.11
+           ii. conda create --name textctrl python=3.11<br>
            iii. Cotinue remain steps from https://github.com/weichaozeng/TextCtrl
    
     e. Lama:<br>
