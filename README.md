@@ -45,11 +45,11 @@ Significant improvement on OCR and text-fidelity metrics
            ii. Download code from https://github.com/advimman/lama into path /Tools/STR/Lama<br>
            iii. conda create --name lama python=3.6
    
-    f. DiffTSR:
+    f. DiffTSR:<br>
            i. Download code from https://github.com/YuzheZhang-1999/DiffTSR into path /Tools/Super-resolution/DiffTSR<br>
            ii. conda create --name DiffTSR python=3.8
    
-    e. Base Python:
+    e. Base Python:<br>
            i. The base python version need to be > python 3.11<br>
            ii. This is use for execute inference script, so don't need to create any new enviroments name
 
