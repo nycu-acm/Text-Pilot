@@ -84,21 +84,21 @@ the pipeline uses GPT-image-1 as its T2I model.
 
 1. Prepare:
    
-    a. python ./File_generate.py
+    a. ```python ./File_generate.py
    
     b. move all the image out of folder and copy the original and final image to /Datasets/Generate
         >> Use the microsoft image ai to ocr the image, and save in Datasets/Eval/OCR_results
 
-2. OCR:
+3. OCR:
    
     a. python ./OCR_score.py
         >> Start evalution
    
-3. FID
+4. FID
    
     a. python FID_score.py ../Datasets/MARIOEval/MARIOEval/LAIONEval4000/images ../Datasets/Generate/Edit_FID
 
-4. Clip_score
+5. Clip_score
    
     a. python Clip_scroe.py
    
@@ -106,4 +106,4 @@ the pipeline uses GPT-image-1 as its T2I model.
         python Clip_score.py image2prompt.json ./Datasets/Generate/SD3_FID
         python Clip_score.py image2prompt_edit.json ./Datasets/Generate/Edit_FID
 
-5. GPT-4o (prepare API Key) and LLava-LLama-3 (download from https://huggingface.co/xtuner/llava-llama-3-8b)
+6. GPT-4o (prepare API Key) and LLava-LLama-3 (download from https://huggingface.co/xtuner/llava-llama-3-8b)
