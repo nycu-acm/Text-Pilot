@@ -69,7 +69,7 @@ Significant improvement on OCR and text-fidelity metrics
    
     a. create folder iter_exp into path /Datasets/MARIOEval/MARIOEval/LAIONEval4000
 
-6. ```bash
+6. ```
    conda activate base311
 
 7. ```
