@@ -84,14 +84,14 @@ the pipeline uses GPT-image-1 as its T2I model.
 
 1. Prepare:
    
-    a. ```python ./File_generate.py
+    a. python File_generate.py
    
     b. move all the image out of folder and copy the original and final image to /Datasets/Generate
         >> Use the microsoft image ai to ocr the image, and save in Datasets/Eval/OCR_results
 
 3. OCR:
    
-    a. python ./OCR_score.py
+    a. python OCR_score.py
         >> Start evalution
    
 4. FID
