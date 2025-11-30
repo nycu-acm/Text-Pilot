@@ -59,7 +59,7 @@
 
   <main>
     <!-- ABSTRACT + CONTRIBUTION -->
-    <section id="abstract" class="section">
+    <!-- <section id="abstract" class="section">
       <div class="container">
         <h2>📝 Abstract</h2>
         <p>In recent years, text-to-image diffusion models have achieved remarkable progress in generating photorealistic and semantically coherent images. However, producing accurate and readable text within generated scenes remains a long-standing challenge—typical failures include misspellings, missing characters, or semantic inconsistencies between the visual text and its prompt. Prior approaches either fine-tune diffusion architectures with additional datasets or rely on manual post-processing tools, yet they still lack an effective verification and self-correction mechanism.To address this, we propose Text-Pilot, a unified and training-free framework that leverages a Multimodal Large Language Model (MLLM) as an autonomous agent to reason about text–prompt inconsistencies and coordinate multiple visual foundation models for correction. The system performs iterative perception–reasoning–action cycles, automatically detecting, editing, erasing, and regenerating textual regions to ensure consistency and legibility. We conduct extensive experiments and rating-based evaluations, incorporating several Vision-Language Models (VLMs) to validate its effectiveness. The results show that Text-Pilot can be seamlessly integrated with various T2I models, substantially improving textual accuracy while maintaining overall image quality.</p>
@@ -77,7 +77,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- METHOD -->
     <section id="method" class="section">
@@ -88,7 +88,7 @@
           <div class="col-12">
             <div class="card">
               <h3>🏗️ LAMP Architecture</h3>
-              <div class="fig"><img src="assets/img/Fig2.png" alt="Architecture of LAMP"></div>
+              <div class="fig"><img src="assets/img/Figure 3. Overview.jpg" alt="Architecture of Text-Pilot"></div>
               <p class="caption"> The time series <span class="math">\( \mathbf{X}_{1:T} \)</span> is decomposed into three interpretable components:
         <strong>trend</strong>, <strong>seasonal</strong>, and <strong>residual</strong>. These components are processed through
         separate encoders, and their embeddings are used to retrieve relevant prompts from structured prompt pools
