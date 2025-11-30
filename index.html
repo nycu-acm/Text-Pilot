@@ -59,11 +59,11 @@
 
   <main>
     <!-- ABSTRACT + CONTRIBUTION -->
-    <!-- <section id="abstract" class="section">
+    <section id="abstract" class="section">
       <div class="container">
         <h2>📝 Abstract</h2>
         <p>In recent years, text-to-image diffusion models have achieved remarkable progress in generating photorealistic and semantically coherent images. However, producing accurate and readable text within generated scenes remains a long-standing challenge—typical failures include misspellings, missing characters, or semantic inconsistencies between the visual text and its prompt. Prior approaches either fine-tune diffusion architectures with additional datasets or rely on manual post-processing tools, yet they still lack an effective verification and self-correction mechanism.To address this, we propose Text-Pilot, a unified and training-free framework that leverages a Multimodal Large Language Model (MLLM) as an autonomous agent to reason about text–prompt inconsistencies and coordinate multiple visual foundation models for correction. The system performs iterative perception–reasoning–action cycles, automatically detecting, editing, erasing, and regenerating textual regions to ensure consistency and legibility. We conduct extensive experiments and rating-based evaluations, incorporating several Vision-Language Models (VLMs) to validate its effectiveness. The results show that Text-Pilot can be seamlessly integrated with various T2I models, substantially improving textual accuracy while maintaining overall image quality.</p>
-
+        
         <div class="row">
           <div class="col-12">
             <div class="card">
@@ -77,7 +77,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- METHOD -->
     <section id="method" class="section">
@@ -89,7 +89,7 @@
             <div class="card">
               <h3>🏗️ Text-Pilot Pipeline</h3>
               <div class="fig"><img src="assets/img/Figure 3. Overview.jpg" alt="Pipeline of Text-Pilot"></div>
-              <p class="caption">ystem overview of Text-Pilot. The pipeline begins with a user text prompt, which is converted into an initial image by a T2I model. The Text Spotting module detects all textual re- gions and provides them, along with the image and prompt, to the MLLM Agent for verification and correction planning. The Text Manipulation modules then perform editing operations, The corrected image is subsequently fed back into the next iteration, forming a closed self-correction loop.</p>
+              <p class="caption">System overview of Text-Pilot. The pipeline begins with a user text prompt, which is converted into an initial image by a T2I model. The Text Spotting module detects all textual re- gions and provides them, along with the image and prompt, to the MLLM Agent for verification and correction planning. The Text Manipulation modules then perform editing operations, The corrected image is subsequently fed back into the next iteration, forming a closed self-correction loop.</p>
             </div>
           </div>
         </div>
