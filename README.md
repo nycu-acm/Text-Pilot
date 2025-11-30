@@ -74,11 +74,11 @@ Significant improvement on OCR and text-fidelity metrics
 
 7. ```
    python eval.py
-the pipeline uses Stable Diffusion 3.5 as its T2I model.
+The pipeline uses Stable Diffusion 3.5 as its T2I model.
 
 8. ```
    python eval_image1.py
-the pipeline uses GPT-image-1 as its T2I model.
+The pipeline uses GPT-image-1 as its T2I model.
 
 ## 🔧 Eval
 
