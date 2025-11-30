@@ -37,7 +37,7 @@
       <h2 class="title-sub">Intelligent Visual Text Planning and Manipulation via Multi-modal LLM as Agent</h2>
 
       <div class="authors">
-        <a target="_blank" rel="noopener">Yuan Kang Kuo</a>,
+        <a target="_blank" rel="noopener">Yuan-Kang Kuo</a>,
         <a target="_blank" rel="noopener">Quang-Thang Le</a>,
         <a target="_blank" rel="noopener">Ching-Chun Huang</a>
       </div>
@@ -51,7 +51,7 @@
 
       <div class="cta-row">
         <a class="btn primary" href="#" aria-disabled="true" target="_blank" rel="noopener">Paper (coming soon)</a>
-        <a class="btn primary" href="https://github.com/nycu-acm/LAMP-Leveraging-Autoregressive-Modeling-and-Prompt-Retrieval-for-Zero-Shot-Time-Series-Forecasting" target="_blank" rel="noopener">Code</a>
+        <a class="btn primary" href="https://github.com/nycu-acm/Text-Pilot" target="_blank" rel="noopener">Code</a>
         <a class="btn primary" href="#" aria-disabled="true" target="_blank" rel="noopener">Video (coming soon)</a>
       </div>
     </div>
@@ -62,7 +62,7 @@
     <section id="abstract" class="section">
       <div class="container">
         <h2>📝 Abstract</h2>
-        <p>The application of Large Language Models (LLMs) in time series forecasting remains debated, as recent studies have shown that replacing LLMs with simpler components, such as basic attention layers, can lead to comparable or even improved performance, raising questions about the true contribution of LLMs in such tasks. To address this problem and unlock the potential of LLMs more effectively, we propose LAMP (Leveraging Autoregressive Modeling and Prompt Retrieval for Zero-Shot Time Series Forecasting), a zero-shot forecasting framework that leverages frozen pre-trained LLMs through dynamic prompt retrieval and autoregressive reasoning. LAMP first decomposes input time series into trend, seasonal, and residual components, then projects them into the LLM’s embedding space. For each component, the model retrieves semantically aligned prompts from specialized prompt pools using a similarity-based matching mechanism. These prompts are enhanced with textual guidance generated from dataset descriptions, which are encoded via a frozen text embedder to provide semantic conditioning. The selected prompt embeddings are then fused with the input and fed into a frozen LLM, which autoregressively generates future values without any parameter updates. This design enables LAMP to generalize across domains and forecasting horizons while remaining computationally efficient. Experiments across diverse benchmarks confirm that LAMP achieves strong zero-shot forecasting performance, especially in long-horizon and non-stationary scenarios, demonstrating the power of prompt-driven adaptation in bridging time series and language models. This framework enables practical deployment in real-world systems where domain shift and limited training data pose significant challenges.</p>
+        <p>In recent years, text-to-image diffusion models have achieved remarkable progress in generating photorealistic and semantically coherent images. However, producing accurate and readable text within generated scenes remains a long-standing challenge—typical failures include misspellings, missing characters, or semantic inconsistencies between the visual text and its prompt. Prior approaches either fine-tune diffusion architectures with additional datasets or rely on manual post-processing tools, yet they still lack an effective verification and self-correction mechanism.To address this, we propose Text-Pilot, a unified and training-free framework that leverages a Multimodal Large Language Model (MLLM) as an autonomous agent to reason about text–prompt inconsistencies and coordinate multiple visual foundation models for correction. The system performs iterative perception–reasoning–action cycles, automatically detecting, editing, erasing, and regenerating textual regions to ensure consistency and legibility. We conduct extensive experiments and rating-based evaluations, incorporating several Vision-Language Models (VLMs) to validate its effectiveness. The results show that Text-Pilot can be seamlessly integrated with various T2I models, substantially improving textual accuracy while maintaining overall image quality.</p>
 
         <div class="row">
           <div class="col-12">
