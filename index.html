@@ -87,14 +87,9 @@
         <div class="row">
           <div class="col-12">
             <div class="card">
-              <h3>🏗️ LAMP Architecture</h3>
-              <div class="fig"><img src="assets/img/Figure 3. Overview.jpg" alt="Architecture of Text-Pilot"></div>
-              <p class="caption"> The time series <span class="math">\( \mathbf{X}_{1:T} \)</span> is decomposed into three interpretable components:
-        <strong>trend</strong>, <strong>seasonal</strong>, and <strong>residual</strong>. These components are processed through
-        separate encoders, and their embeddings are used to retrieve relevant prompts from structured prompt pools
-        initialized from the LLM's vocabulary space. Additionally, a textual description of the dataset is encoded and
-        concatenated with retrieved prompt values and embedded time-series tokens. This fused representation is passed to
-        a frozen decoder-only LLM (e.g., GPT-2), which autoregressively forecasts future values.</p>
+              <h3>🏗️ Text-Pilot Pipeline</h3>
+              <div class="fig"><img src="assets/img/Figure 3. Overview.jpg" alt="Pipeline of Text-Pilot"></div>
+              <p class="caption">ystem overview of Text-Pilot. The pipeline begins with a user text prompt, which is converted into an initial image by a T2I model. The Text Spotting module detects all textual re- gions and provides them, along with the image and prompt, to the MLLM Agent for verification and correction planning. The Text Manipulation modules then perform editing operations, The corrected image is subsequently fed back into the next iteration, forming a closed self-correction loop.</p>
             </div>
           </div>
         </div>
