@@ -64,7 +64,7 @@
         <h2>📝 Abstract</h2>
         <p>In recent years, text-to-image diffusion models have achieved remarkable progress in generating photorealistic and semantically coherent images. However, producing accurate and readable text within generated scenes remains a long-standing challenge—typical failures include misspellings, missing characters, or semantic inconsistencies between the visual text and its prompt. Prior approaches either fine-tune diffusion architectures with additional datasets or rely on manual post-processing tools, yet they still lack an effective verification and self-correction mechanism.To address this, we propose Text-Pilot, a unified and training-free framework that leverages a Multimodal Large Language Model (MLLM) as an autonomous agent to reason about text–prompt inconsistencies and coordinate multiple visual foundation models for correction. The system performs iterative perception–reasoning–action cycles, automatically detecting, editing, erasing, and regenerating textual regions to ensure consistency and legibility. We conduct extensive experiments and rating-based evaluations, incorporating several Vision-Language Models (VLMs) to validate its effectiveness. The results show that Text-Pilot can be seamlessly integrated with various T2I models, substantially improving textual accuracy while maintaining overall image quality.</p>
         
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-12">
             <div class="card">
               <h3 id="contribution">LLM-based time series forecasting</h3>
@@ -77,13 +77,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- METHOD -->
     <section id="method" class="section">
       <div class="container">
         <h2>📘 Methodology</h2>
-
+        <p>we present an overview of Text-Pilot. The text spotting module provides the MLLM with the detected textual content, their corresponding coordinate information, and mask images.The MLLM agent is responsible for verification and planning throughout the entire system, including evaluating textual correctness, formulating correction plans, and progressively verifying the processes of image generation, editing, and self-correction. It then invokes specific tools from the Text Manipulation Tool Library to perform concrete operations
         <div class="row">
           <div class="col-12">
             <div class="card">
@@ -106,8 +106,7 @@
             <div class="card">
               <h3>Quantitative Metrics</h3>
               <div class="fig"><img src="assets/img/results.png" alt="Quantitative results table"></div>
-              <p class="caption">Transfer Learning Forecasting Results Across Different Horizons. The best results are in bold, and the second-best
-are underlined.</p>
+              <p class="caption">Quantitative comparison of different methods integrated with Text-Pilot across multiple evaluation metrics</p>
             </div>
           </div>
           
@@ -161,11 +160,7 @@ are underlined.</p>
                 <div class="fig">
                   <img src="assets/img/Figure 7. Visualization SD3-2.jpg" alt="Visual results final">
                   <div class="caption">
-                    Forecasting visualization across four representative examples from the ETT, weather, traffic dataset.
-                    Each subplot shows the input historical values (blue), ground-truth future values (green), and 
-                    predicted values (red dashed) by LAMP (left) and AutoTimes (right). The sequence length and prediction 
-                    horizon are both set to 96. Results highlight the accuracy and adaptability of LAMP across diverse 
-                    temporal patterns.
+                    Visualization results from Text-Pilot
                   </div>
                 </div>
           
