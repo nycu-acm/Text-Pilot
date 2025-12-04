@@ -1,6 +1,8 @@
 
 # Text-Pilot: Intelligent Visual Text Planning and Manipulation via Multi-modal LLM as Agent
 
+🔗 **Project Page:** https://nycu-acm.github.io/Text-Pilot/
+
 ## 📘 Overview
 Text-Pilot is a training-free, MLLM-based agent framework that automatically detects and corrects text errors in generated images.
 It leverages the reasoning and perception abilities of multi-modal large language models (MLLMs) to evaluate visual text accuracy and autonomously decide which operation—edit, erase, or regenerate—should be applied.
