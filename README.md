@@ -1,7 +1,6 @@
 
 # Text-Pilot: Intelligent Visual Text Planning and Manipulation via Multi-modal LLM as Agent
 
-🔗 **Project Page:** 
 <p align="center">
   <a href="https://nycu-acm.github.io/Text-Pilot/" target="_blank">
     <img src="https://img.shields.io/badge/Project%20Page-Text--Pilot-blue?style=for-the-badge" />
